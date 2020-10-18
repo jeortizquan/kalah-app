@@ -3,15 +3,29 @@
 <head>
     <title>kalah game</title>
     <style>
-  *{margin:0;}
-  .game {
-    display: flex;
-    width: 100%;
-  }
+    .game {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      width: 100%;
+      height: 640px;
+    }
+    .section {
+      background-color: grey;
+    }
+    .north-container {
+      display: flex;
+      background-color: cyan;
+    }
+    .south-container {
+      display: flex;
+      background-color: darkcyan;
+    }
     .pit {
       width:80px; height:80px;
       margin:10px;
-      border-radius:100%;
+      border-radius: 20px;
       background-color:white;
       cursor:pointer;
         p{
@@ -24,9 +38,8 @@
     }
     .kalahah {
       width: 80px; height: 160px;
-      margin:10px;
-      flex: 2;
-      border-radius:40px;
+      margin:20px;
+      border-radius:20px;
       background-color:white;
         p{
           position:absolute;
